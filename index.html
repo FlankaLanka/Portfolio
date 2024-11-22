@@ -21,11 +21,11 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<!--
+								<!-- <a href="index.html" class="logo">
+									
 									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-									-->
-								</a>
+									
+								</a> -->
 
 							<!-- Nav -->
 								<nav>
@@ -42,10 +42,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="index.html">About</a></li>
 						</ul>
 					</nav>
 
@@ -61,7 +58,7 @@
 									<span class="image">
 										<img src="images/kura/kura_logo.JPG" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="kura.html">
 										<h2>Kura</h2>
 										<div class="content">
 											<p>Building custom AR headset. See demos.</p>
@@ -72,7 +69,7 @@
 									<span class="image">
 										<img src="images/prime_engine/pe_thumbnail.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="pe.html">
 										<h2>Prime Engine</h2>
 										<div class="content">
 											<p>Adding features to a minimal game engine. Physics, networking, audio, performance optimizations, etc.</p>
@@ -83,7 +80,7 @@
 									<span class="image">
 										<img src="images/monochrome/monochrome_thumbnail.gif" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="monochrome.html">
 										<h2>Monochrome</h2>
 										<div class="content">
 											<p>Top down indie puzzle game. To what extent can we design a puzzle game that requires players to be mechanically precise?</p>
@@ -94,7 +91,7 @@
 									<span class="image">
 										<img src="images/moon/moon_creative_lab_logo.jpg" alt="" />
 									</span>
-									<a href="generic.html">
+									<a href="moon.html">
 										<h2>Moon Creative Lab</h2>
 										<div class="content">
 											<p>Some fun projects I worked on at Moon! Exploring AI, networking, and game design!</p>
@@ -200,16 +197,16 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="#">
+								<form id="contact-form">
 									<div class="fields">
 										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
+											<input type="text" name="name" id="name" placeholder="Name" required />
 										</div>
 										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
+											<input type="email" name="email" id="email" placeholder="Email" required />
 										</div>
 										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
+											<textarea name="message" id="message" placeholder="Message" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -220,14 +217,15 @@
 							<section>
 								<h2>Connect</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/frank-yang-072337142/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/FlankaLanka" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="tel:+16263215066" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="mailto:frankyang233@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; 2024 Frank Yang. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; 2024 Frank Yang. All rights reserved.</li><li>Design: <a href="">HTML5 UP</a></li>
+								<div id="footer"></div>
 							</ul>
 						</div>
 					</footer>
@@ -240,6 +238,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/formhandler.js"></script>
 
 	</body>
 </html>
